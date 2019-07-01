@@ -1,0 +1,18 @@
+<h1>Answer</h1>
+<div class="card">
+  <p class="maintxt"><%= "#{@ans}"%></p>
+  <p>-You</p>
+</div>
+<div class="card">
+  <% if @ans == "I am going to work" %>
+  <p class="maintxt">Great!<p>
+  <% elsif @ans =~ /.*\?$/ %>
+  <p class="maintxt">Silly question, get dressed and go to work!<p>
+  <% else %>
+  <p class="maintxt">I don't care, get dressed and go to work!</p>
+  <% end %>
+  <p>-Your Coach</p>
+</div>
+<div class="btn">
+  <%= link_to "Ask a new question", ask_path %>
+</div>

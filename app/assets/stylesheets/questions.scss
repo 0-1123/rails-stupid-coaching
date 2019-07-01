@@ -1,0 +1,25 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$light: rgb(240,240,240);
+
+body {
+  background: $light;
+  text-align: center;
+}
+
+h1 {
+  font-family: arial;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.btn-ask {
+  background: $light;
+  width: 100px;
+  margin: auto;
+  margin-top: 30px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  padding: 10px;
+}
